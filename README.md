@@ -9,10 +9,13 @@ To run the code supplied with the figures, Python and associated scientific comp
 ## Homogeneous Acoustoelectric Simulation
 Fourier(k-space) Poisson solution for the Acoustoelectric effect. 
 Please see the article supplementary section for full derivation, with the simulation described in methods. To solve the homogeneous solution of the equation: 
+
 $$
 \nabla E_{AE} = E_{0} \beta \cdot \nabla P
 $$
+
 we consider the Laplacian of the potential (since $E_{0} = - \nabla \phi$):
+
 $$
 \Delta \phi_{AE} = E_{0} \beta \cdot \nabla P
 $$
