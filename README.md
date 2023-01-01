@@ -14,17 +14,12 @@ $$
 \nabla E_{AE} = E_{0} \beta \cdot \nabla P
 $$
 
-we consider the Laplacian of the potential (since $E_{0} = - \nabla \phi$):
+we consider the Laplacian of the potential (since $E_{0} = - \nabla \phi$) and consider the right hand side as a source term for the Poisson diffusion equation:
 
 $$
 \Delta \phi_{AE} = E_{0} \beta \cdot \nabla P
 $$
 
-which is in the form of the Poisson equation where the source term is:
-
-$$
-source = E_{0} \beta \cdot \nabla P
-$$
 
 1. Generate the acoustic field using focused.m. This will save out a two dimensional transducer data file such as large_Area_0.5MHz.mat. 
 
