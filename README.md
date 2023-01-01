@@ -2,6 +2,13 @@
 
 Herein lies code to support the figures and findings in the Acoustoelectric article. The data that goes with the code in this repository is located in Figshare and referenced in the associated data_locations.txt file. Before running the code, you will need to download the data files and place them in the folders that run the code that pertains to them. 
 
+
+<p align="center">
+	<img src="https://figshare.com/s/85f8f092e32756cd4975" height="150">
+</p>
+
+
+
 ## Installation Note
 
 ```
@@ -39,7 +46,7 @@ $$
 5. If you wish to plot the phasors, run the plot_phi_phasors.py file over the simulation output file. 
 
 <p align="center">
-	<img src="images/phi_wrt_time_a0_ef_8000.0.png" height="160">
+	<img src="images/phi_wrt_time_a0_ef_8000.0.png" height="120">
 </p>
 
 
