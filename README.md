@@ -1,6 +1,6 @@
 # Acoustoelectric
 
-Herein lies code to support the figures and findings in the Acoustoelectric article. The data that goes with the code in this repository is located in Figshare and referenced in the associated data_locations.txt file. 
+Herein lies code to support the figures and findings in the Acoustoelectric article. The data that goes with the code in this repository is located in Figshare and referenced in the associated data_locations.txt file. Before running the code, you will need to download the data files and place them in the folders that run the code that pertains to them. 
 
 ## Installation Note
 
@@ -28,16 +28,35 @@ $$
 \Delta \phi_{AE} = E_{0} \beta \cdot \nabla P
 $$
 
-
 1. Generate the acoustic field using focused.m. This will save out a two dimensional transducer data file such as large_Area_0.5MHz.mat. 
 
 2. Run python pressure_3Diser.py with the file that was generated. This will put the 2D result into a 3 dimensional grid, utilizing the axial symmetry. 
 
 3. Run python kspace_solver.py to create all the ae components. 
 
-4. To view the simulation, you may wish to use the data viewing gui provided in Fig1and2-simulation_viewer_tool
+4. To view the simulation, you may wish to use the data viewing gui provided in Fig1and2-simulation_viewer_tool. 
+
+5. If you wish to plot the phasors, run the plot_phi_phasors.py file over the simulation output file. 
+
+<p align="center">
+	<img src="images/phi_wrt_time_a0_ef_8000.0.png" height="160">
+</p>
+
 
 ## Figure 1 and 2: Simulation results 
+
+Data to run with this code is included here: DOI: 10.6084/m9.figshare.21802165
+
+```
+python plot_viewer.py
+```
+
+Will plot the static 2D field, giving you a scroll bar to search through the 3rd dimension in either XY or XZ views. 
+
+<p align="center">
+	<img src="images/screenshot_of_viewer.png" height="300">
+</p>
+
 
 ## Figure 3: Acoustoelectric Frequency Mixing in phantom
 
