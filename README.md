@@ -4,7 +4,16 @@ Herein lies code to support the figures and findings in the Acoustoelectric arti
 
 ## Installation Note
 
-To run the code supplied with the figures, Python and associated scientific computing libraries will need to be installed according to 
+```
+Python 3.6.7 
+```
+
+To run the code supplied with the figures, Python and associated scientific computing libraries will need to be installed according to:
+
+```
+pip install -r requirements.txt
+
+```
 
 ## Homogeneous Acoustoelectric Simulation
 Fourier(k-space) Poisson solution for the Acoustoelectric effect. 
