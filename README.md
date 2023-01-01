@@ -12,7 +12,6 @@ To run the code supplied with the figures, Python and associated scientific comp
 
 ```
 pip install -r requirements.txt
-
 ```
 
 ## Homogeneous Acoustoelectric Simulation
