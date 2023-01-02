@@ -18,7 +18,7 @@ To run the code supplied with the figures, Python and associated scientific comp
 pip install -r requirements.txt
 ```
 
-## Homogeneous Acoustoelectric Simulation
+## Homogeneous Acoustoelectric simulation
 Fourier(k-space) Poisson solution for the Acoustoelectric effect. 
 Please see the article supplementary section for full derivation, with the simulation described in methods. To solve the homogeneous solution of the equation: 
 
@@ -26,15 +26,15 @@ $$
 \nabla E_{AE} = E_{0} \beta \cdot \nabla P
 $$
 
-we consider the Laplacian of the potential (since $E_{0} = - \nabla \phi$) and consider the right hand side as a source term for the Poisson diffusion equation:
+we consider the Laplacian of the potential (since $E_{0} = - \nabla \phi$) and consider the right-hand side as a source term for the Poisson diffusion equation:
 
 $$
 \Delta \phi_{AE} = E_{0} \beta \cdot \nabla P
 $$
 
-1. Generate the acoustic field in matlab using focused.m. This will save out a two dimensional transducer data file such as large_Area_0.5MHz.mat. This implementation was written by Prof. Robin Cleveland. 
+1. Generate the acoustic field in matlab using focused.m. This will save out a two-dimensional transducer data file such as large_Area_0.5MHz.mat. This implementation was written by Prof. Robin Cleveland. 
 
-2. Run python pressure_3Diser.py with the file that was generated above. This will put the 2D result into a 3 dimensional grid, utilizing the axial symmetry. 
+2. Run python pressure_3Diser.py with the file that was generated above. This will put the 2D result into a three-dimensional grid, utilizing the axial symmetry. 
 
 3. Run python kspace_solver.py to create all the ae components. A resultant NPZ file will be created which contains final acoustoelectric fields as well as intermediary results. 
 
@@ -62,7 +62,7 @@ Will plot the static 2D field, giving you a scroll bar to search through the 3rd
 	<img src="images/screenshotXZ_of_viewer.png" height="250">
 </p>
 
-## Figure 3: Acoustoelectric Frequency Mixing in phantom
+## Figure 3: Acoustoelectric frequency mixing in phantom
 
 Data to run with this code is included here: DOI: 10.6084/m9.figshare.21802171
 
@@ -78,7 +78,7 @@ Note: You should ensure the filename matches the file you downloaded.
 
 An example python script is provided which reads in the supplied data recordings, and makes the plots which are contained in Figure 3 of the article. 
 
-Below are some of the outputs of the scripts, showing the frequency mixing nature of the generated acoustoelectric field, the first where the applied eletric field is 8khz, the second where the applied electric field is at 499.99khz. 
+Below are some of the outputs of the scripts, showing the frequency mixing nature of the generated acoustoelectric field, the first where the applied electric field is 8khz, the second where the applied electric field is at 499.99khz. 
 
 <p align="left">
 	<img src="images/waveform_closeup.png" height="200">
