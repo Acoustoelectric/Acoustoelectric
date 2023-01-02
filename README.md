@@ -51,27 +51,51 @@ Data to run with this code is included here: DOI: 10.6084/m9.figshare.21802165
 python plot_viewer.py
 ```
 
-Will plot the static 2D field, giving you a scroll bar to search through the 3rd dimension in either XY or XZ views. 
+Will plot the static 2D field, giving you a scroll bar to search through the 3rd dimension in either XY or XZ views. The viewer shows every variable in the equation simultaneously, to assist in understanding how the acoustoelectrically generated field changes. i.e. the reader may wish to see how the X,Y,Z acoustoelectric field components trend with pressure, or how the potential $\phi$ changes with the gradient of pressure term. 
 
-<p align="center">
-	<img src="images/screenshotXY_of_viewer.png" height="200">
+<p align="left">
+	<img src="images/screenshotXY_of_viewer.png" height="300">
+	<img src="images/screenshotXZ_of_viewer.png" height="300">
 </p>
-<p align="center">
-	<img src="images/screenshotXZ_of_viewer.png" height="200">
-</p>
-
 
 ## Figure 3: Acoustoelectric Frequency Mixing in phantom
 
 An example python script is provided which reads in the supplied data recordings, and makes the plots which are contained in Figure 3 of the article. 
 
+Below are some of the outputs of the scripts, showing the frequency mixing nature of the generated acoustoelectric field, the first where the applied eletric field is 8khz, the second where the applied electric field is at 499.99khz. 
+
+<p align="left">
+	<img src="images/waveform_closeup.png" height="300">
+	<img src="images/df_waveform_timeseries.png" height="300">
+</p>
+
+
 ## Figure 4: Acoustoelectric 2D maps in phantom 
 
+The python viewing tools contained here enable the reader to scroll through the time series potential data of the generated acoustoelectric field, and observe how it changes with time, as well as how it changes based on the angle between the applied electric field and pressure field. 
+
+You can use the arrow keys to scroll through the data, or the slider bar, or enter a specific index in the file you are interested in. This provides a more intuitive way to understand how the acoustoelectric field, based on experimental phantom measurements, changes with time. 
+
+<p align="center">
+	<img src="images/time_scroller_xy2d_tool.png" height="120">
+</p>
+
+
+<p align="left">
+	<img src="images/timescroller_xy_sumdiffparts_screenshot.png" height="300">
+	<img src="images/time_scroller_comparison_tool.png" height="300">
+</p>
 
 
 ## Figure 5: Acoustoelectric demodulation and signal recovery in phantom 
 
+This code provides a data set where a complex ionic signal is created in the phantom (8khz + 9khz + 11khz), is upmodulated via the applied ultrasound, and then decoded using IQ demodulation. The code is supplied for this, as is the calculation of the cross-correlation metric. 
 
+<p align="left">
+	<img src="images/ionic_input_signal.png" height="200">
+	<img src="images/heterodyned_signal.png" height="200">
+	<img src="images/demodulated_signal.png" height="200">
+</p>
 
 ## License 
 
