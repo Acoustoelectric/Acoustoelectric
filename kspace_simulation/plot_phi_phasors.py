@@ -5,7 +5,7 @@ Last Updated:
     Updater: Jean Rintoul
     Date: 31/12/2022
 
-Display the phasors components and save an image file. 
+Description: Display the phasor components to observe the spatial distribution with respect to time and save an image file. 
 
 """
 import numpy as np 

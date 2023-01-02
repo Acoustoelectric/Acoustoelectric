@@ -1,4 +1,4 @@
-# Acoustoelectric
+# Remote Encoding and Decoding of Electric Fields through Acoustoelectric Heterodyning Tools and Datasets
 
 Herein lies code to support the figures and findings in the Acoustoelectric article. The data that goes with the code in this repository is located in Figshare and referenced in this readme. Before running the code, you will need to download the data files and place them in the folders that run the code that pertains to them. 
 

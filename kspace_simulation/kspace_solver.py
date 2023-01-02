@@ -3,10 +3,10 @@
 Author: Jean Rintoul
 Date: 18.04.2022
 
-Solve the Poisson Equation, and Acoustoelectric result in k-space. 
+Description: Solve the Poisson Equation, and Acoustoelectric result in k-space. 
 
-This takes in a pressure file  that has been converted into 3D space, to compute with an electric field at a given angle. 
-Saves out all partial results into a large NPZ file so they can be viewed individual later. 
+This takes in a pressure file that has been converted into 3D space, to compute with an electric field at a given angle. 
+Saves out all partial results into a large NPZ file for later analysis. 
 
 
 """

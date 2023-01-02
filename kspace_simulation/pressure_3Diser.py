@@ -6,7 +6,7 @@ Last Updated:
  	Updater: Jean Rintoul
  	Date: 31/12/2022
 
- Takes the output of the analytic Bessel spherical transducer solver, and turns it into a three dimensional field based on axial symmetry. 
+Description: Takes the output of the analytic Bessel spherical transducer solver, and turns it into a three dimensional field based on axial symmetry. 
 
 """
 import numpy as np 

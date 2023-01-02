@@ -1,5 +1,9 @@
 """
-Display
+
+Author: Jean Rintoul 
+Date: 02.01.2022
+Description: GUI to scroll through time for the XY view of experimental acoustoelectric data and compare the 0 degree daa with 90 degree data. 
+
 
 """
 import sys

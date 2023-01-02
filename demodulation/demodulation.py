@@ -1,12 +1,13 @@
 '''
 
-Title: demodulation
-Function: View a stream code data file. 
 
-This function has a rolling window pearson cross-correlation. 
 
 Author: Jean Rintoul
 Date: 18.03.2022
+
+Description: View the modulated signal, then recover the original signal using IQ demodulation using a data fle collected from acoustoelectric phantom experiment. 
+Perform rolling window pearson cross-correlation to compare the recovered signal to the original applied ionic signal. 
+
 
 '''
 import numpy as np

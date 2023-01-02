@@ -1,6 +1,7 @@
 """
 Author: Jean Rintoul 
 Date: 02.01.2022
+Description: GUI to scroll through time for the XY view of experimental acoustoelectric data. 
 
 """
 import sys

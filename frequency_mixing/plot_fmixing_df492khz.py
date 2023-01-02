@@ -1,9 +1,9 @@
 '''
-Frequency mixing plot 
 
 Author: Jean Rintoul
 Date: 29/12/2022
 
+Description: Frequenxy mixing plot
 
 '''
 

@@ -3,7 +3,7 @@
 Author: Jean Rintoul 
 Date: 02.01.2022
 
-Description: Compare 0 degree and 90 degree acoustoelectric data from phantom experiments. 
+Description: Compare 0 degree and 90 degree acoustoelectric data from phantom experiments in XZ view. 
 
 
 """

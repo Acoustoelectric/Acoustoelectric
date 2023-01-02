@@ -3,6 +3,8 @@
 Author: Jean Rintoul 
 Date: 29/12/2022 
 
+Description: Frequency mixing plot showing the difference frequency at 10Hz. 
+
 '''
 
 
@@ -218,23 +220,6 @@ plt.tight_layout()
 plt.savefig(save_title+".png", bbox_inches='tight')
 plt.show()
 
-
-# fig = plt.figure(figsize=(2,4))
-# ax = fig.add_subplot(1,1,1)
-# plt.plot((frequencies+10), 1000*fft_ae/gain, color = tableaucolorblind10[1],linewidth=2)
-# plt.xlim([999980,1000000])
-# plt.xticks([999990],['999990']) # 0.0002 is 0.2ms. 
-# ax.yaxis.tick_right()
-# plt.ylim([0,0.01])
-# plt.xticks(fontsize=14)    
-# plt.yticks(fontsize=14) 
-# ax.spines['left'].set_visible(False)
-# ax.spines['top'].set_visible(False)
-# plt.tight_layout()
-# save_title = 'sf_fft'
-# # plt.savefig(save_title+".svg", format="svg") 
-# plt.savefig(save_title+".png", bbox_inches='tight')
-# plt.show()
 
 df_chan = data[ae_channel]-np.mean(data[ae_channel])
 

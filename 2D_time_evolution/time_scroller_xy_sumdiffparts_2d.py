@@ -1,6 +1,7 @@
 """
 Author: Jean Rintoul 
 Date: 02.01.2022
+Description: Display the XY view w.r.t. time of the phantom acoustoelectric dataset, showing the difference, sum and superposition waves independently. 
 
 """
 import sys
