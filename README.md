@@ -54,8 +54,8 @@ python plot_viewer.py
 Will plot the static 2D field, giving you a scroll bar to search through the 3rd dimension in either XY or XZ views. The viewer shows every variable in the equation simultaneously, to assist in understanding how the acoustoelectrically generated field changes. i.e. the reader may wish to see how the X,Y,Z acoustoelectric field components trend with pressure, or how the potential $\phi$ changes with the gradient of pressure term. 
 
 <p align="left">
-	<img src="images/screenshotXY_of_viewer.png" height="300">
-	<img src="images/screenshotXZ_of_viewer.png" height="300">
+	<img src="images/screenshotXY_of_viewer.png" height="200">
+	<img src="images/screenshotXZ_of_viewer.png" height="200">
 </p>
 
 ## Figure 3: Acoustoelectric Frequency Mixing in phantom
@@ -65,8 +65,8 @@ An example python script is provided which reads in the supplied data recordings
 Below are some of the outputs of the scripts, showing the frequency mixing nature of the generated acoustoelectric field, the first where the applied eletric field is 8khz, the second where the applied electric field is at 499.99khz. 
 
 <p align="left">
-	<img src="images/waveform_closeup.png" height="300">
-	<img src="images/df_waveform_timeseries.png" height="300">
+	<img src="images/waveform_closeup.png" height="200">
+	<img src="images/df_waveform_timeseries.png" height="200">
 </p>
 
 
@@ -77,13 +77,13 @@ The python viewing tools contained here enable the reader to scroll through the 
 You can use the arrow keys to scroll through the data, or the slider bar, or enter a specific index in the file you are interested in. This provides a more intuitive way to understand how the acoustoelectric field, based on experimental phantom measurements, changes with time. 
 
 <p align="center">
-	<img src="images/time_scroller_xy2d_tool.png" height="120">
+	<img src="images/time_scroller_xy2d_tool.png" height="300">
 </p>
 
 
 <p align="left">
-	<img src="images/timescroller_xy_sumdiffparts_screenshot.png" height="300">
-	<img src="images/time_scroller_comparison_tool.png" height="300">
+	<img src="images/timescroller_xy_sumdiffparts_screenshot.png" height="200">
+	<img src="images/time_scroller_comparison_tool.png" height="200">
 </p>
 
 
@@ -95,6 +95,12 @@ This code provides a data set where a complex ionic signal is created in the pha
 	<img src="images/ionic_input_signal.png" height="200">
 	<img src="images/heterodyned_signal.png" height="200">
 	<img src="images/demodulated_signal.png" height="200">
+</p>
+
+<p align="left">
+	<img src="images/fft_ionic_signal.png" height="200">
+	<img src="images/fft_modulated_signal.png" height="200">
+	<img src="images/fft_recovered_signal.png" height="200">
 </p>
 
 ## License 
