@@ -54,8 +54,8 @@ python plot_viewer.py
 Will plot the static 2D field, giving you a scroll bar to search through the 3rd dimension in either XY or XZ views. The viewer shows every variable in the equation simultaneously, to assist in understanding how the acoustoelectrically generated field changes. i.e. the reader may wish to see how the X,Y,Z acoustoelectric field components trend with pressure, or how the potential $\phi$ changes with the gradient of pressure term. 
 
 <p align="left">
-	<img src="images/screenshotXY_of_viewer.png" height="200">
-	<img src="images/screenshotXZ_of_viewer.png" height="200">
+	<img src="images/screenshotXY_of_viewer.png" height="250">
+	<img src="images/screenshotXZ_of_viewer.png" height="250">
 </p>
 
 ## Figure 3: Acoustoelectric Frequency Mixing in phantom
@@ -81,7 +81,7 @@ You can use the arrow keys to scroll through the data, or the slider bar, or ent
 </p>
 
 
-<p align="left">
+<p align="center">
 	<img src="images/timescroller_xy_sumdiffparts_screenshot.png" height="200">
 	<img src="images/time_scroller_comparison_tool.png" height="200">
 </p>
@@ -98,9 +98,9 @@ This code provides a data set where a complex ionic signal is created in the pha
 </p>
 
 <p align="left">
-	<img src="images/fft_ionic_signal.png" height="200">
-	<img src="images/fft_modulated_signal.png" height="200">
-	<img src="images/fft_recovered_signal.png" height="200">
+	<img src="images/fft_ionic_signal.png" height="100">
+	<img src="images/fft_modulated_signal.png" height="100">
+	<img src="images/fft_recovered_signal.png" height="100">
 </p>
 
 ## License 
