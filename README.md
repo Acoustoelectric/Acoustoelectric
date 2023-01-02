@@ -91,13 +91,13 @@ You can use the arrow keys to scroll through the data, or the slider bar, or ent
 
 This code provides a data set where a complex ionic signal is created in the phantom (8khz + 9khz + 11khz), is upmodulated via the applied ultrasound, and then decoded using IQ demodulation. The code is supplied for this, as is the calculation of the cross-correlation metric. 
 
-<p align="left">
+<p align="center">
 	<img src="images/ionic_input_signal.png" height="200">
 	<img src="images/heterodyned_signal.png" height="200">
 	<img src="images/demodulated_signal.png" height="200">
 </p>
 
-<p align="left">
+<p align="center">
 	<img src="images/fft_ionic_signal.png" height="100">
 	<img src="images/fft_modulated_signal.png" height="100">
 	<img src="images/fft_recovered_signal.png" height="100">
