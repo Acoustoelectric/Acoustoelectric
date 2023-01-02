@@ -13,7 +13,7 @@ Herein lies code to support the figures and findings in the Acoustoelectric arti
 ## Installation Note
 
 ```
-Python 3.6.7 
+Python 3.7.9 
 ```
 
 To run the code supplied with the figures, Python and associated scientific computing libraries will need to be installed according to:
