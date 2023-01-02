@@ -2,25 +2,6 @@
 
 Herein lies code to support the figures and findings in the Acoustoelectric article. The data that goes with the code in this repository is located in Figshare and referenced in the associated data_locations.txt file. Before running the code, you will need to download the data files and place them in the folders that run the code that pertains to them. 
 
-
-<p align="center">
-	<img src="
-https://figshare.com/s/d0855fbf1f94b1be6d86/xz_angle_90.gif" height="150">
-</p>
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
-
-![Alt Text](
-https://figshare.com/s/d0855fbf1f94b1be6d86/xz_angle_90.gif)
-
-<p align="center">
-	<img src="https://figshare.com/s/d0855fbf1f94b1be6d86/xz_angle_90.gif" height="300">
-</p>
-
-
-
-https://figshare.com/s/d0855fbf1f94b1be6d86/xz_angle_90.gif
-
-
 ## Installation Note
 
 ```
@@ -73,7 +54,10 @@ python plot_viewer.py
 Will plot the static 2D field, giving you a scroll bar to search through the 3rd dimension in either XY or XZ views. 
 
 <p align="center">
-	<img src="images/screenshot_of_viewer.png" height="300">
+	<img src="images/screenshotXY_of_viewer.png" height="200">
+</p>
+<p align="center">
+	<img src="images/screenshotXZ_of_viewer.png" height="200">
 </p>
 
 
