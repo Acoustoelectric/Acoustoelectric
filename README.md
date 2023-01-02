@@ -4,11 +4,22 @@ Herein lies code to support the figures and findings in the Acoustoelectric arti
 
 
 <p align="center">
-	<img src="https://figshare.com/s/85f8f092e32756cd4975" height="150">
+	<img src="
+https://figshare.com/s/d0855fbf1f94b1be6d86/xz_angle_90.gif" height="150">
 </p>
 ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 
-![Alt Text](https://figshare.com/s/85f8f092e32756cd4975)
+![Alt Text](
+https://figshare.com/s/d0855fbf1f94b1be6d86/xz_angle_90.gif)
+
+<p align="center">
+	<img src="https://figshare.com/s/d0855fbf1f94b1be6d86/xz_angle_90.gif" height="300">
+</p>
+
+
+
+https://figshare.com/s/d0855fbf1f94b1be6d86/xz_angle_90.gif
+
 
 ## Installation Note
 
