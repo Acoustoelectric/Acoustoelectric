@@ -1,5 +1,6 @@
 """
-Display
+Author: Jean Rintoul 
+Date: 02.01.2022
 
 """
 import sys

@@ -2,7 +2,7 @@
 
 Author: Jean Rintoul
 Date: 28/12/2022
-Purpose@ Display sub-terms from the acoustoelectric k-space simulation 
+Description: Display sub-terms from the acoustoelectric k-space simulation 
 
 """
 import numpy as np 

@@ -1,14 +1,10 @@
 """
-Display
 
+Author: Jean Rintoul 
+Date: 02.01.2022
 
- Plot the radial view and the 2D image plot. 
- Have a button which enables saving to file at various time points. 
+Description: Compare 0 degree and 90 degree acoustoelectric data from phantom experiments. 
 
- Goal: Radial comparison that looks really good. 
- This could be done with XY or XZ data... let's try XY data first. 
-
- Secondly, I'd like the efficiency value. 
 
 """
 import sys
