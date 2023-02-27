@@ -27,20 +27,27 @@ import pandas as pd
 import scipy.stats as st
 
 def demodulate(signal,carrier_f):
-    fc    = carrier_f
-    phi   = 0 
-    phi2  = 90 # this is for lock in like implementation. 
-    A1    = 1.0 
-    wc    = 2*np.pi*fc*t + phi
-    wc2   = 2*np.pi*fc*t + phi2
-    offset  = 0 #
-    carrier_zero    = A1*np.exp(1j*(wc))+offset
-    carrier_90      = A1*np.exp(1j*(wc2))+offset
     # multiply the carrier signal by the real signal. 
-    multiplied_zero   = signal*carrier_zero
-    multiplied_90     = signal*carrier_90
-    demodulated_signal = multiplied_zero+multiplied_90
-    return demodulated_signal 
+    idown = signal*np.cos(2*np.pi*carrier_f*t)
+    qdown = -signal*np.sin(2*np.pi*carrier_f*t)   
+    demodulated_signal = idown + 1j*qdown
+    return demodulated_signal
+
+# def demodulate(signal,carrier_f):
+#     fc    = carrier_f
+#     phi   = 0 
+#     phi2  = 90 # this is for lock in like implementation. 
+#     A1    = 1.0 
+#     wc    = 2*np.pi*fc*t + phi
+#     wc2   = 2*np.pi*fc*t + phi2
+#     offset  = 0 #
+#     carrier_zero    = A1*np.exp(1j*(wc))+offset
+#     carrier_90      = A1*np.exp(1j*(wc2))+offset
+#     # multiply the carrier signal by the real signal. 
+#     multiplied_zero   = signal*carrier_zero
+#     multiplied_90     = signal*carrier_90
+#     demodulated_signal = multiplied_zero+multiplied_90
+#     return demodulated_signal 
 
 def rmse(predictions, targets):
     return np.sqrt(((predictions - targets) ** 2).mean())

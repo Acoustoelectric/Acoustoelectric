@@ -21,6 +21,7 @@ from scipy.signal import fftconvolve
 #
 # Create plots to show the difference frequency at 10Hz, when applied frequency is 499.99kHz
 filename = '10_ati_stream_data_0.8.npy'
+filename='df10hz_stream.npy'
 # 
 # // Channel identities: 
 # // 1. rf amplifier output
@@ -186,7 +187,7 @@ plt.rcParams['axes.linewidth'] = 2
 
 
 
-fig = plt.figure(figsize=(4,4))
+fig = plt.figure(figsize=(5,4))
 ax = fig.add_subplot(111)
 plt.plot(frequencies/1000, fft_rf, color = tableaucolorblind10[0],linewidth=2)
 plt.plot(frequencies/1000, fft_e, color = tableaucolorblind10[5],linewidth=2)
@@ -194,8 +195,8 @@ plt.xlim([499.8,500.1])
 plt.ylim(0,np.max(fft_rf))
 plt.xticks(np.arange(499.8, 500.1, 0.1))
 # plt.xticks([])
-plt.yticks(fontsize=14)
-plt.xticks(fontsize=14)
+plt.yticks(fontsize=18)
+plt.xticks(fontsize=18)
 ax.spines['right'].set_visible(False)
 ax.spines['top'].set_visible(False)
 save_title = 'df_fft_input_signals'
@@ -204,19 +205,19 @@ plt.savefig(save_title+".png")
 plt.show()
 
 
-fig = plt.figure(figsize=(3,4))
+fig = plt.figure(figsize=(4,4))
 ax = fig.add_subplot(1,1,1) # multiply by 10000 to convert to mv. 
 plt.plot(frequencies, 1000*fft_ae/gain, color = tableaucolorblind10[1],linewidth=2)
-plt.xlim([0,40])
+plt.xlim([0,50])
 plt.ylim([0,0.35])
-plt.xticks(fontsize=14)    
-plt.yticks(fontsize=14) 
+plt.xticks(fontsize=18)    
+plt.yticks(fontsize=18) 
 ax.spines['right'].set_visible(False)
 ax.spines['top'].set_visible(False)
 save_title = 'df_fft'
 plt.tight_layout()
 # fig.subplots_adjust(right=0.5, hspace=0.5)
-# plt.savefig(save_title+".svg", format="svg") 
+plt.savefig(save_title+".svg", format="svg") 
 plt.savefig(save_title+".png", bbox_inches='tight')
 plt.show()
 
@@ -232,13 +233,13 @@ ax4.plot(t,data[rf_channel], color = tableaucolorblind10[0])
 
 ax2.set_xticks([])
 ax3.set_xticks([])
-ax2.tick_params(axis='y', labelsize=14)
-ax3.tick_params(axis='y', labelsize=14)
-ax4.tick_params(axis='y', labelsize=14)
+ax2.tick_params(axis='y', labelsize=18)
+ax3.tick_params(axis='y', labelsize=18)
+ax4.tick_params(axis='y', labelsize=18)
 ax2.set_ylim([-0.1,0.1])
 plt.xlim([1.5,2.0])
 plt.xticks([1.5,1.6,1.7,1.8,1.9,2.0],['0','0.1','0.2','0.3','0.4','0.5']) # 0.0002 is 0.2ms. 
-plt.xticks(fontsize=14, rotation=0)
+plt.xticks(fontsize=18, rotation=0)
 save_title = 'df_waveform_timeseries'
 plt.savefig(save_title+".svg", format="svg") 
 plt.savefig(save_title+".png")

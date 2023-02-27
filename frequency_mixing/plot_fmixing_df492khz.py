@@ -17,7 +17,7 @@ from scipy import signal
 from scipy.signal import butter, lfilter
 from scipy.signal import fftconvolve
 #
-filename = 'stream1.npy'
+filename = 'df492khz_stream.npy'
 # // Channel identities: 
 # // 1. rf amplifier output
 # // 2. hydrophone probe
@@ -179,8 +179,8 @@ plt.ylim(0,np.max(fft_rf))
 stepsize = 500000
 start, end = ax.get_xlim()
 ax.set_xscale('log')
-plt.yticks(fontsize=14)
-plt.xticks(fontsize=14)
+plt.yticks(fontsize=18)
+plt.xticks(fontsize=18)
 ax.spines['right'].set_visible(False)
 ax.spines['top'].set_visible(False)
 save_title = 'fft_input_signals'
@@ -188,7 +188,7 @@ plt.savefig(save_title+".svg", format="svg")
 plt.savefig(save_title+".png")
 plt.show()
 
-fig = plt.figure(figsize=(4,4))
+fig = plt.figure(figsize=(5,4))
 ax = fig.add_subplot(111)
 plt.plot(frequencies/1000, fft_ae, color = tableaucolorblind10[1],linewidth=2)
 plt.xlim([0,1100])
@@ -200,31 +200,32 @@ plt.ylim(0,np.max(fft_ae))
 # ax.legend(['AE FFT(V)'],loc='upper left',framealpha= 0.0,fontsize=14)
 # plt.ylabel('Volts(V)',fontsize=14)
 # plt.xlabel('Frequency(Hz)',fontsize=14)
-plt.yticks(fontsize=14)
-plt.xticks(fontsize=14)
+plt.yticks(fontsize=18)
+plt.xticks(fontsize=18)
 ax.spines['right'].set_visible(False)
 ax.spines['top'].set_visible(False)
 save_title = 'fft_mixed_signal'
-plt.savefig(save_title+".svg", format="svg") 
-plt.savefig(save_title+".png")
+plt.savefig(save_title+".svg", format="svg", transparent=True) 
+plt.savefig(save_title+".png", transparent=True)
 plt.show()
 
 
-fig = plt.figure(figsize=(4,4))
+fig = plt.figure(figsize=(5,4))
 ax = fig.add_subplot(111)
 plt.plot(frequencies/1000, fft_ae, color = tableaucolorblind10[1],linewidth=2)
 # plt.ylim([0,0.045])
 plt.xlim(485, 515)
 plt.ylim(0,np.max(fft_ae))
-plt.yticks(fontsize=14)
-plt.xticks(fontsize=14)
+plt.yticks(fontsize=18)
+plt.xticks(fontsize=18)
 # plt.xticks([])
 # plt.yticks([])
 ax.spines['right'].set_visible(False)
 ax.spines['top'].set_visible(False)
 save_title = 'fft_mixed_signal_closeup'
+plt.savefig(save_title+".svg", format="svg") 
 # plt.savefig(save_title+".svg", format="svg") 
-plt.savefig(save_title+".png")
+plt.savefig(save_title+".png", transparent=True)
 plt.show()
 
 # 
@@ -262,14 +263,14 @@ ax2.set_xticks([])
 # factor of 400. 
 # 
 plt.xticks([0.4998,0.4999,0.500],['0','0.1','0.2']) # 0.0002 is 0.2ms. 
-plt.xticks(fontsize=14, rotation=0)
+plt.xticks(fontsize=18, rotation=0)
 # ax1.set_yticklabels(fontsize=14)
 # ax2.set_yticklabels(fontsize=14)
 # ax3.set_yticklabels(fontsize=14)
 
-ax1.tick_params(axis='y', labelsize=14)
-ax2.tick_params(axis='y', labelsize=14)
-ax3.tick_params(axis='y', labelsize=14)
+ax1.tick_params(axis='y', labelsize=18)
+ax2.tick_params(axis='y', labelsize=18)
+ax3.tick_params(axis='y', labelsize=18)
 # ax3.set_yticks(fontsize=14, rotation=0)
 # ax2.set_yticks(fontsize=14, rotation=0)
 # ax1.set_yticks(fontsize=14, rotation=0)
@@ -279,7 +280,7 @@ ax3.tick_params(axis='y', labelsize=14)
 # ax4.set_xticks([])
 # plt.ylim([-0.3,0.35])
 save_title = 'waveform_closeup'
-# plt.savefig(save_title+".svg", format="svg") 
-plt.savefig(save_title+".png")
+plt.savefig(save_title+".svg", format="svg", transparent=True) 
+plt.savefig(save_title+".png", transparent=True)
 plt.show()
 
