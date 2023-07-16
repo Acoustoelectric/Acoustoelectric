@@ -1,10 +1,11 @@
 # Remote Encoding and Decoding of Electric Fields through Acoustoelectric Heterodyning Tools and Datasets
 
-Herein lies code to support the figures and findings in the Acoustoelectric article. The data that goes with the code in this repository is located in Figshare and referenced in this readme. Before running the code, you will need to download the data files and place them in the folders that run the code that pertains to them. 
+Herein lies code to support the figures and findings in the Acoustoelectric article - [Remote focused encoding and decoding of electric fields through acoustoelectric heterodyning](https://www.nature.com/articles/s42005-023-01198-w). The data that goes with the code in this repository is located in Figshare and referenced in this readme. Before running the code, you will need to download the data files and place them in the folders that run the code that pertains to them. 
 
 Screenshots of the expected outputs are provided, as is Python, Matplotlib, Scipy and Numpy versions used. 
 
-To see all the files uploaded for this project see DOI: 10.6084/m9.figshare.c.6365098
+To see all the files uploaded for this project see DOI: [Figshare Link to all data](https://doi.org/10.6084/m9.figshare.c.6365098.v1)
+
 
 ## Installation Note
 
